@@ -23,7 +23,7 @@ abstract class LogUtilPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  String getPlatformVersion() {
-    return '1.0.0';
+  Future<String?> getPlatformVersion() {
+    return _instance.getPlatformVersion();
   }
 }
