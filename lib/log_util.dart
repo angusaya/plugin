@@ -2,7 +2,7 @@
 import 'log_util_platform_interface.dart';
 
 class LogUtil {
-  String getPlatformVersion() {
+  Future<String?> getPlatformVersion() {
     return LogUtilPlatform.instance.getPlatformVersion();
   }
 
